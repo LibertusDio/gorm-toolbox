@@ -1,5 +1,7 @@
 package toolbox
 
+import "encoding/json"
+
 func StructToMap(b interface{}) (map[string]interface{}, error) {
 	data, err := json.Marshal(b)
 	if err != nil {
